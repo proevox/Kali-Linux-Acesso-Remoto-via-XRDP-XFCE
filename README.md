@@ -10,8 +10,8 @@ Tutorial para configurar e recuperar o acesso remoto gráfico ao Kali Linux atra
 * **Protocolo:** RDP
 * **Serviço:** XRDP
 * **Porta:** `3389`
-* **IP do Kali:** `192.168.100.141`
-* **Usuário:** `proevox`
+* **IP do Kali:** `seu ip do kali`
+* **Usuário:** `seu usuario`
 * **Cliente Windows:** Conexão de Área de Trabalho Remota (`mstsc`)
 
 ---
@@ -132,7 +132,7 @@ Na tela do XRDP:
 
 ```text
 Session: Xorg
-Username: proevox
+Username: seu user
 Password: senha do Kali
 ```
 
@@ -160,7 +160,7 @@ Isso normalmente significa que o XRDP conseguiu conectar, mas a sessão gráfica
 
 ```bash
 sudo systemctl stop xrdp
-sudo pkill -u proevox
+sudo pkill -u seu user
 ```
 
 ### 2. Limpar arquivos da sessão gráfica
@@ -267,7 +267,7 @@ Depois tente conectar novamente pelo Windows.
 No Windows PowerShell:
 
 ```powershell
-Test-NetConnection 192.168.100.141 -Port 3389
+Test-NetConnection "seu ip do klai" -Port 3389
 ```
 
 O resultado esperado:
@@ -406,7 +406,7 @@ sudo systemctl restart xrdp
 ### Parar sessões antigas
 
 ```bash
-sudo pkill -u proevox
+sudo pkill -u "user do kali"
 ```
 
 ### Limpar sessão
